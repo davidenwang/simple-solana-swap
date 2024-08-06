@@ -1,50 +1,21 @@
 # simple-solana-swap
 
-This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
+Solana swap frontend that enables users to connect a solana wallet and swap between tokens
 
-## Getting Started
+## Setup
 
-### Prerequisites
+After cloning fill in the rpc endpoint in `keys.tsx`
 
-- Node v18.18.0 or higher
+## Start the web app
 
-### Installation
+Install dependencies
 
-#### Clone the repo
-
-```shell
-git clone <repo-url>
-cd <repo-name>
 ```
-
-#### Install Dependencies
-
-```shell
 npm install
 ```
 
-#### Start the web app
+Run the development server
 
 ```
 npm run dev
-```
-
-## Apps
-
-### web
-
-This is a React app.
-
-#### Commands
-
-Start the web app
-
-```shell
-npm run dev
-```
-
-Build the web app
-
-```shell
-npm run build
 ```
