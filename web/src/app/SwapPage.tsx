@@ -157,6 +157,7 @@ export default function SwapPage() {
     const fromTokenAmount = fromTokenData?.amount;
     const fromTokenDecimals = fromTokenAmount?.decimals;
 
+    // Validate the swap
     const validFields = !!toToken && !!fromToken;
     const validSwap =
       toToken != fromToken && parseFloat(amount) > 0 && fromTokenDecimals;
@@ -183,6 +184,7 @@ export default function SwapPage() {
     }
   }, [amount, toToken, fromToken]);
 
+  // Sign and send the transaction on-chain
   async function triggerSwap() {
     if (!umi || !swapData) {
       return;
